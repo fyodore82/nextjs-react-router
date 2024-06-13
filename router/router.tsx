@@ -4,6 +4,7 @@ import BluePage from "@/components/blue-page";
 import MainPage from "@/components/main-page";
 import { StrictMode, useEffect, useRef, useState } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import NotFoundPage from "@/components/not-found-page";
 
 // declare module "@tanstack/react-router" {
 //   interface Register {
@@ -69,7 +70,7 @@ const Router = () => {
 
     const r = createBrowserRouter([
       {
-        path: "/",
+        path: "/nextjs-react-router",
         element: <MainPage />,
         children: [
           {
@@ -86,6 +87,10 @@ const Router = () => {
           },
         ],
       },
+      {
+        path: "/*",
+        element: <NotFoundPage />,
+      }
     ]);
 
     setRouter(r);

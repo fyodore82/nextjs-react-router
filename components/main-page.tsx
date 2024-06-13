@@ -31,19 +31,19 @@ const MainPage = (props: any) => {
           gap: "20px",
         }}
       >
-        <Link to="/" className="[&.active]:font-bold">
+        <Link to="/nextjs-react-router" className="[&.active]:font-bold">
           Home
         </Link>
-        <Link to="/red-page" className="[&.active]:font-bold">
+        <Link to="red-page" className="[&.active]:font-bold">
           Red Page
         </Link>
-        <Link to="/blue-page" className="[&.active]:font-bold">
+        <Link to="blue-page" className="[&.active]:font-bold">
           Blue Page
         </Link>
-        <Link to="/green-page" className="[&.active]:font-bold">
+        <Link to="green-page" className="[&.active]:font-bold">
           Green Page
         </Link>
-        <Link to="/non-existing-page" className="[&.active]:font-bold">
+        <Link to="non-existing-page" className="[&.active]:font-bold">
           Non Existing Page
         </Link>
       </div>
