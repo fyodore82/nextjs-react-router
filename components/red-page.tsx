@@ -1,5 +1,4 @@
 const RedPage = () => {
-  console.log('red page')
   return (
     <div
       style={{

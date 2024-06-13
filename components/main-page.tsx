@@ -1,7 +1,6 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 
 const MainPage = (props: any) => {
-  console.log('main page props ', props)
   return (
     <div
       style={{
@@ -31,21 +30,21 @@ const MainPage = (props: any) => {
           gap: "20px",
         }}
       >
-        <Link to="/nextjs-react-router" className="[&.active]:font-bold">
+        <NavLink to="/nextjs-react-router" end className="[&.active]:font-bold">
           Home
-        </Link>
-        <Link to="red-page" className="[&.active]:font-bold">
+        </NavLink>
+        <NavLink to="red-page" className="[&.active]:font-bold">
           Red Page
-        </Link>
-        <Link to="blue-page" className="[&.active]:font-bold">
+        </NavLink>
+        <NavLink to="blue-page" className="[&.active]:font-bold">
           Blue Page
-        </Link>
-        <Link to="green-page" className="[&.active]:font-bold">
+        </NavLink>
+        <NavLink to="green-page" className="[&.active]:font-bold">
           Green Page
-        </Link>
-        <Link to="non-existing-page" className="[&.active]:font-bold">
+        </NavLink>
+        <NavLink to="non-existing-page" className="[&.active]:font-bold">
           Non Existing Page
-        </Link>
+        </NavLink>
       </div>
       <Outlet />
     </div>
